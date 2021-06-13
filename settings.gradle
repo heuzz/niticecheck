@@ -1,0 +1,2 @@
+rootProject.name = "EZ_Tour"
+include ':app'

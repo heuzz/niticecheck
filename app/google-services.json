@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "767895670761",
+    "firebase_url": "https://ez-tour-opensource-default-rtdb.firebaseio.com",
+    "project_id": "ez-tour-opensource",
+    "storage_bucket": "ez-tour-opensource.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767895670761:android:3f381ad2224d4449c40578",
+        "android_client_info": {
+          "package_name": "com.example.ez_tour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767895670761-7cs2i6j5eg1l9fnckiohrtbl9682k54r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLJXghzop3UsaS44F6usF_UelUTm1GsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767895670761-7cs2i6j5eg1l9fnckiohrtbl9682k54r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

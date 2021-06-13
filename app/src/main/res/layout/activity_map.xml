@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <RelativeLayout
+        android:id="@+id/map_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/map_image_0000_top_1"
+        android:gravity="center"
+        android:text="근처에 있는 전기차 충전소들의 위치에요"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_gps"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/map_image_gps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_help"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/map_image_help"
+        app:layout_constraintBottom_toBottomOf="@+id/map_View"
+        app:layout_constraintStart_toStartOf="@+id/map_View" />
+
+    <ImageView
+        android:id="@+id/img_hlep"
+        android:layout_width="320dp"
+        android:layout_height="500dp"
+        android:alpha="70"
+        android:background="@drawable/mapinfo"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/map_View"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/map_button_bar"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FF0000"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:icon="@drawable/map_image_0010_menubutton_2"
+            app:iconGravity="top"
+            app:iconPadding="10dp"
+            app:iconSize="50dp"
+            app:iconTint="#673AB7" />
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FF0000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:icon="@drawable/map_image_0012_menubutton_4"
+            app:iconGravity="top"
+            app:iconPadding="20dp"
+            app:iconSize="50dp" />
+
+        <Button
+            android:id="@+id/btn_mypage"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FF0000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:icon="@drawable/map_image_0013_menubutton_6"
+            app:iconGravity="top"
+            app:iconPadding="20dp"
+            app:iconSize="50dp"
+            app:iconTint="#673AB7" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

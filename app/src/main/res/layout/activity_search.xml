@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4F4FA"
+    android:windowSoftInputMode="adjustNothing"
+    tools:context=".SearchActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/map_image_0000_top_1"
+        android:gravity="center"
+        android:text="근처에 있는 전기차 충전소들의 위치에요"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/map_button_bar"
+        android:orientation="horizontal"
+        android:windowSoftInputMode="adjustNothing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FF0000"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:windowSoftInputMode="adjustNothing"
+            app:icon="@drawable/map_image_0010_menubutton_2"
+            app:iconGravity="top"
+            app:iconPadding="10dp"
+            app:iconSize="50dp" />
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FF0000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:windowSoftInputMode="adjustNothing"
+            app:icon="@drawable/map_image_0012_menubutton_4"
+            app:iconGravity="top"
+            app:iconPadding="20dp"
+            app:iconSize="50dp"
+            app:iconTint="#673AB7" />
+
+        <Button
+            android:id="@+id/btn_mypage"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FF0000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:icon="@drawable/map_image_0013_menubutton_6"
+            app:iconGravity="top"
+            app:iconPadding="20dp"
+            app:iconSize="50dp"
+            app:iconTint="#673AB7" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/review"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:windowSoftInputMode="adjustNothing"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/viewholder" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/map_image_0000_searchbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/searcBar"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:windowSoftInputMode="adjustNothing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
